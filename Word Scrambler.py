@@ -12,7 +12,7 @@ for i in range(26):
     scrambled_words = ''.join(word)
     print(scrambled_words)
     guess = input("What is the word? ")
-    if guess == chosen_words[i]:
+    if guess.lower() == chosen_words[i]:
         print("Correct! You win a point!")
         points += 1
     else:
